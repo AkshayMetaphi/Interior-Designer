@@ -209,10 +209,10 @@ const About = () => {
 
     <div className="core-values-grid">
       <div className="cv-item-1">
-        <Trophy strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
-        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Achievement</h4>
+        <Handshake strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
+        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Commitment</h4>
         <p style={{ color: "var(--color-text-light)", fontSize: "0.95rem", lineHeight: "1.8" }}>
-          Making the journey of each stakeholder successful and fulfilling by achieving desired results.
+          Committing to every promise — on quality, timelines, costs, and ethics — towards clients, employees, and partners, without compromise.
         </p>
       </div>
       <div className="cv-item-2">
@@ -230,10 +230,10 @@ const About = () => {
         </p>
       </div>
       <div className="cv-item-4">
-        <Handshake strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
-        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Commitment</h4>
+        <Trophy strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
+        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Achievement</h4>
         <p style={{ color: "var(--color-text-light)", fontSize: "0.95rem", lineHeight: "1.8" }}>
-          Committing to every promise — on quality, timelines, costs, and ethics — towards clients, employees, and partners, without compromise.
+          Making the journey of each stakeholder successful and fulfilling by achieving desired results.
         </p>
       </div>      
     </div>
