@@ -12,10 +12,12 @@ import Blog from "./pages/Blog";
 import Shop from "./pages/Shop";
 import ScrollToTop from "./components/ScrollToTop";
 import Process from "./pages/Process";
+import AnalyticsTracker from "./components/AnalyticsTracker";
 
 function App() {
   return (
     <>
+      <AnalyticsTracker />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
