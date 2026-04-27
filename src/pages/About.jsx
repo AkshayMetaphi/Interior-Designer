@@ -149,12 +149,103 @@ const About = () => {
   </p>
 </div>
 
+ <style>
+{`
+  .core-values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cv-item-1 {
+    padding: 2rem 4rem 2.5rem 1rem;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .cv-item-2 {
+    padding: 2rem 1rem 2.5rem 4rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .cv-item-3 {
+    padding: 2.5rem 4rem 1rem 1rem;
+    border-right: 1px solid #e0e0e0;
+  }
+  .cv-item-4 {
+    padding: 2.5rem 1rem 1rem 4rem;
+  }
+  @media (max-width: 768px) {
+    .core-values-grid {
+      grid-template-columns: 1fr;
+    }
+    .cv-item-1, .cv-item-3 {
+      border-right: none;
+    }
+    .cv-item-3 {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 2rem 1rem;
+    }
+    .cv-item-1, .cv-item-2, .cv-item-4 {
+      padding: 2rem 1rem;
+    }
+    .cv-item-4 {
+      border-bottom: none;
+    }
+  }
+`}
+</style>
+<div style={{ background: "#f8f8f8", padding: "3rem 1rem 6rem 1rem" }}>
+  <div className="container">
+    <div style={{ textAlign: "center" }}>
+      <h2
+        className="heading-lg"
+        style={{
+          display: "inline-block",
+          paddingBottom: "0.5rem",
+          margin: "0 0 1rem 0",
+          letterSpacing: "1px",
+        }}
+      >
+        Our Core Values
+      </h2>
+    </div>
+
+    <div className="core-values-grid">
+      <div className="cv-item-1">
+        <Handshake strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
+        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Commitment</h4>
+        <p style={{ color: "var(--color-text-light)", fontSize: "0.95rem", lineHeight: "1.8" }}>
+          Committing to every promise — on quality, timelines, costs, and ethics — towards clients, employees, and partners, without compromise.
+        </p>
+      </div>
+      <div className="cv-item-2">
+        <Lightbulb strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
+        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Challenge</h4>
+        <p style={{ color: "var(--color-text-light)", fontSize: "0.95rem", lineHeight: "1.8" }}>
+          Welcoming challenges as opportunities to innovate and exceed customer expectations.
+        </p>
+      </div>
+      <div className="cv-item-3">
+        <Users strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
+        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Cooperation</h4>
+        <p style={{ color: "var(--color-text-light)", fontSize: "0.95rem", lineHeight: "1.8" }}>
+          Working as one integrated team — clients, designers, site teams, and partners — aligned towards a shared vision and successful project delivery.
+        </p>
+      </div>
+      <div className="cv-item-4">
+        <Trophy strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
+        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Achievement</h4>
+        <p style={{ color: "var(--color-text-light)", fontSize: "0.95rem", lineHeight: "1.8" }}>
+          Making the journey of each stakeholder successful and fulfilling by achieving desired results.
+        </p>
+      </div>      
+    </div>
+  </div>
+</div>
+
 
 
 
 
       {/* Section 2: Our Expertise */}
-      <section className="section-padding" style={{background: "#f8f8f8"  }}>
+      <section className="section-padding" style={{background: "#fff"  }}>
         <div className="container">
           <div
             className="grid-2-col"
@@ -235,96 +326,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <style>
-{`
-  .core-values-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .cv-item-1 {
-    padding: 2rem 4rem 2.5rem 1rem;
-    border-right: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  .cv-item-2 {
-    padding: 2rem 1rem 2.5rem 4rem;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  .cv-item-3 {
-    padding: 2.5rem 4rem 1rem 1rem;
-    border-right: 1px solid #e0e0e0;
-  }
-  .cv-item-4 {
-    padding: 2.5rem 1rem 1rem 4rem;
-  }
-  @media (max-width: 768px) {
-    .core-values-grid {
-      grid-template-columns: 1fr;
-    }
-    .cv-item-1, .cv-item-3 {
-      border-right: none;
-    }
-    .cv-item-3 {
-      border-bottom: 1px solid #e0e0e0;
-      padding: 2rem 1rem;
-    }
-    .cv-item-1, .cv-item-2, .cv-item-4 {
-      padding: 2rem 1rem;
-    }
-    .cv-item-4 {
-      border-bottom: none;
-    }
-  }
-`}
-</style>
-<div style={{ background: "#fff", padding: "3rem 1rem 6rem 1rem" }}>
-  <div className="container">
-    <div style={{ textAlign: "center" }}>
-      <h2
-        className="heading-lg"
-        style={{
-          display: "inline-block",
-          paddingBottom: "0.5rem",
-          margin: "0 0 1rem 0",
-          letterSpacing: "1px",
-        }}
-      >
-        Our Core Values
-      </h2>
-    </div>
-
-    <div className="core-values-grid">
-      <div className="cv-item-1">
-        <Trophy strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
-        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Achievement</h4>
-        <p style={{ color: "var(--color-text-light)", fontSize: "0.95rem", lineHeight: "1.8" }}>
-          Making the journey of each stakeholder successful and fulfilling by achieving desired results.
-        </p>
-      </div>
-      <div className="cv-item-2">
-        <Lightbulb strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
-        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Challenge</h4>
-        <p style={{ color: "var(--color-text-light)", fontSize: "0.95rem", lineHeight: "1.8" }}>
-          Welcoming challenges as opportunities to innovate and exceed customer expectations.
-        </p>
-      </div>
-      <div className="cv-item-3">
-        <Users strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
-        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Cooperation</h4>
-        <p style={{ color: "var(--color-text-light)", fontSize: "0.95rem", lineHeight: "1.8" }}>
-          Working as one integrated team — clients, designers, site teams, and partners — aligned towards a shared vision and successful project delivery.
-        </p>
-      </div>
-      <div className="cv-item-4">
-        <Handshake strokeWidth={1} size={32} style={{ color: "var(--color-accent)", marginBottom: "1.5rem" }} />
-        <h4 style={{ fontSize: "2rem", marginBottom: "1rem", fontFamily: "var(--font-heading)", fontWeight: "400" }}>Commitment</h4>
-        <p style={{ color: "var(--color-text-light)", fontSize: "0.95rem", lineHeight: "1.8" }}>
-          Committing to every promise — on quality, timelines, costs, and ethics — towards clients, employees, and partners, without compromise.
-        </p>
-      </div>      
-    </div>
-  </div>
-</div>
+     
 
       {/* Section 3: Why Choose Us */}
       <section className="section-padding" style={{background: "#f8f8f8" }}>
