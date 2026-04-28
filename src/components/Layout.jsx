@@ -20,9 +20,25 @@ const Layout = () => {
     // { path: "/contact", label: "Contact" },
   ];
 
-  // Reset body overflow on route change to prevent scroll locking
+  // Update page title and reset body overflow on route change
   React.useEffect(() => {
     document.body.style.overflow = "unset";
+    
+    // Find matching link for title
+    const currentLink = navLinks.find(link => link.path === location.pathname);
+    let pageTitle = "TRIVIE";
+    
+    if (currentLink) {
+      pageTitle = `TRIVIE - ${currentLink.label}`;
+    } else if (location.pathname === "/contact") {
+      pageTitle = "TRIVIE - Contact";
+    } else if (location.pathname.startsWith("/portfolio/")) {
+      pageTitle = "TRIVIE - Project Details";
+    } else if (location.pathname.startsWith("/services/")) {
+      pageTitle = "TRIVIE - Service Details";
+    }
+    
+    document.title = pageTitle;
   }, [location.pathname]);
 
   return (
