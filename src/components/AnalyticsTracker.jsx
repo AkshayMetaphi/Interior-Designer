@@ -9,6 +9,7 @@ const AnalyticsTracker = () => {
     if (typeof window.gtag === "function") {
       window.gtag("config", "G-MCPER8V548", {
         page_path: location.pathname + location.search,
+        page_title: document.title,
       });
     }
   }, [location]);
