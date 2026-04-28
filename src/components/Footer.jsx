@@ -38,7 +38,9 @@ const Footer = () => {
 							>
 								TRIVIE
 							</Link>
-							<h4 className='footer-heading'>Let’s design together</h4>
+							<h4 className='footer-heading' style={{
+									color: "#fff",
+								}}>Let’s design together</h4>
 							<p className='footer-desc'>
 								Ready to transform your space? We are here to help you create
 								the environment of your dreams.
@@ -55,7 +57,9 @@ const Footer = () => {
 
 						{/* Middle Column: Contact */}
 						<div className='footer-col'>
-							<h4 className='footer-heading'>Address</h4>
+							<h4 className='footer-heading' style={{
+									color: "#fff",
+								}}>Address</h4>
 							<ul className='contact-list'>
 								<li>
 									<MapPin size={18} className='contact-icon' />
@@ -94,7 +98,9 @@ const Footer = () => {
 
 						{/* Right Column: Navigation */}
 						<div className='footer-col'>
-							<h4 className='footer-heading'>Quick Links</h4>
+							<h4 className='footer-heading' style={{
+									color: "#fff",
+								}}>Quick Links</h4>
 							<ul
 								className='footer-links'
 								style={{
